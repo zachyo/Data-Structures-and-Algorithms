@@ -36,5 +36,6 @@ function minDepth(root: TreeNode | null): number {
   if (root.right === null) return leftDepth + 1;
 
   // Both children exist — take the shorter path
+  // add one because of the root
   return Math.min(leftDepth, rightDepth) + 1;
 }
